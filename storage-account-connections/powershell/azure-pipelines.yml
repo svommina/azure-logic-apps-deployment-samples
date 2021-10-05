@@ -32,7 +32,7 @@ stages:
     - task: AzureResourceGroupDeployment@2
       name: SharedResourcesDeployment
       inputs:
-        azureSubscription: 'Azure Samples Subscription'
+        azureSubscription: 'armman'
         action: 'Create Or Update Resource Group'
         resourceGroupName: $(resourceGroupName)
         location: $(location)
